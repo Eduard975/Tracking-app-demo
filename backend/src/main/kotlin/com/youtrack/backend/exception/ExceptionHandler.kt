@@ -1,5 +1,6 @@
-package com.youtrack.backend
+package com.youtrack.backend.exception
 
+import com.youtrack.backend.controller.ProjectController
 import org.slf4j.LoggerFactory
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler

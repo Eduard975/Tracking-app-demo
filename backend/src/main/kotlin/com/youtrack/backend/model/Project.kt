@@ -1,4 +1,4 @@
-package com.youtrack.backend
+package com.youtrack.backend.model
 
 import jakarta.persistence.Entity
 import jakarta.persistence.Id

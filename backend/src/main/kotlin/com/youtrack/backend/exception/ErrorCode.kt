@@ -1,4 +1,4 @@
-package com.youtrack.backend
+package com.youtrack.backend.exception
 
 import org.springframework.http.HttpStatus
 

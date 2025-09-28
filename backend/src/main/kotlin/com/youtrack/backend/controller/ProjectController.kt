@@ -1,5 +1,8 @@
-package com.youtrack.backend
+package com.youtrack.backend.controller
 
+import com.youtrack.backend.repository.ProjectRepository
+import com.youtrack.backend.exception.ErrorCode
+import com.youtrack.backend.model.Project
 import org.slf4j.LoggerFactory
 import org.springframework.data.domain.PageRequest
 import org.springframework.data.domain.Pageable
