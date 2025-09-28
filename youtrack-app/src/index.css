@@ -1,0 +1,130 @@
+:root {
+  /* Element colors */
+  --ring-line-color: #43454A;
+  --ring-borders-color: #6F737A;
+  --ring-icon-color: #9DA0A8;
+  --ring-icon-white-color: #FFFFFF;
+  --ring-icon-secondary-color: #9DA0A8;
+  --ring-border-disabled-color: #4E5157;
+  --ring-border-selected-disabled-color: #5A5D63;
+  --ring-border-disabled-active-color: #174971;
+  --ring-icon-disabled-color: #6F737A;
+  --ring-border-hover-color: #375FAD;
+  --ring-border-hover-success-color: #4E8052;
+  --ring-border-hover-error-color: #9C4E4E;
+  --ring-border-accent-color: #366ACF;
+  --ring-icon-hover-color: #5A5D6B;
+  --ring-main-color: #366ACF;
+  --ring-action-link-color: #99BBFF;
+  --ring-main-hover-color: #375FAD;
+  --ring-main-success-color: #4E8052;
+  --ring-main-success-hover-color: #436946;
+  --ring-main-error-color: #BD5757;
+  --ring-main-error-hover-color: #9C4E4E;
+  --ring-main-warning-color: #E08957;
+  --ring-main-warning-hover-color: #C77D55;
+  --ring-main-purple-color: #955AE0;
+  --ring-main-purple-hover-color: #8150BE;
+  --ring-icon-error-color: #E37774;
+  --ring-icon-warning-color: #E08855;
+  --ring-icon-success-color: #5FAD65;
+  --ring-icon-highlight-color: #D6AE58;
+  --ring-icon-highlight-hover-color: #BA9752;
+  --ring-success-border-color: #436946;
+  --ring-success-border-hover-color: #4E8052;
+  --ring-error-border-color: #7A4343;
+  --ring-error-border-hover-color: #9C4E4E;
+  --ring-warning-border-color: #825845;
+  --ring-warning-border-hover-color: #A36B4E;
+  --ring-highlight-border-color: #826A41;
+  --ring-highlight-border-hover-color: #9E814A;
+  --ring-purple-border-color: #583D7A;
+  --ring-purple-border-hover-color: #6C469C;
+  --ring-pale-control-color: #C2D6FC;
+  --ring-popup-border-color: #393B40;
+  --ring-popup-shadow-color: rgba(0, 0, 0, 0.31);
+  --ring-popup-secondary-shadow-color: rgba(0, 0, 0, 0.37);
+  --ring-message-shadow-color: rgba(57, 59, 64, 0.3);
+  --ring-pinned-shadow-color: #000000;
+  --ring-button-danger-hover-color: #E37774;
+  --ring-button-primary-border-color: #99BBFF;
+
+  /* Text colors */
+  --ring-search-color: #709CF5;
+  --ring-hint-color: #868A91;
+  --ring-link-color: #99BBFF;
+  --ring-link-hover-color: #6B9BFA;
+  --ring-error-color: #E37774;
+  --ring-warning-color: #E08957;
+  --ring-success-color: #5FAD65;
+  --ring-purple-text-color: #B589EC;
+  --ring-text-color: #FFFFFF;
+  --ring-active-text-color: #FFFFFF;
+  --ring-white-text-color: #FFFFFF;
+  --ring-heading-color: #FFFFFF;
+  --ring-secondary-color: #9DA0A8;
+  --ring-disabled-color: #6F737A;
+
+  /* Background colors */
+  --ring-content-background-color: #1E1F22;
+  --ring-popup-background-color: #2B2D30;
+  --ring-sidebar-background-color: #2B2D30;
+  --ring-secondary-background-color: #2B2D30;
+  --ring-selected-background-color: #2E436E;
+  --ring-hover-background-color: #212D45;
+  --ring-navigation-background-color: #1E1F22;
+  --ring-tag-background-color: #43454A;
+  --ring-tag-hover-background-color: #4E5157;
+  --ring-removed-background-color: #5E3838;
+  --ring-warning-background-color: #614438;
+  --ring-highlight-background-color: #5E4D33;
+  --ring-added-background-color: #375239;
+  --ring-purple-background-color: #433358;
+  --ring-disabled-background-color: #393B40;
+  --ring-disabled-selected-background-color: #43454A;
+  --ring-button-danger-active-color: #362627;
+  --ring-button-primary-background-color: #366ACF;
+  --ring-table-loader-background-color: rgba(30, 31, 34, 0.5);
+  --ring-removed-subtle-background-color: #402929;
+  --ring-warning-subtle-background-color: #45322B;
+  --ring-highlight-subtle-background-color: #3D3223;
+  --ring-added-subtle-background-color: #253627;
+  --ring-purple-subtle-background-color: #2F2936;
+  --ring-main-container-light-color: #202737;
+  --ring-success-container-light-color: #222D25;
+  --ring-error-container-light-color: #362627;
+  --ring-warning-container-light-color: #352A27;
+  --ring-highlight-container-light-color: #312A23;
+  --ring-grey-container-light-color: #2B2D30;
+  --ring-purple-container-light-color: #2B2531;
+  --ring-highlight-fill-color: #D6AE58;
+  --ring-grey-fill-color: #F0F1F2;
+  --ring-grey-fill-accent-color: #DFE1E5;
+}
+
+.ring-toggle-leftLabel{
+  color: var(--ring-text-color);
+}
+
+body {
+  background-color: var(--ring-content-background-color);
+}
+
+.App {
+  padding: calc(2 * var(--ring-unit));
+  display: flex;
+  flex-direction: column;
+  font-family: var(--ring-font-family);
+  font-size: var(--ring-font-size);
+  background-color: var(--ring-content-background-color);
+  color: var(--ring-text-color);
+  min-height: 100vh;
+}
+
+.component {
+  margin: var(--ring-unit);
+}
+
+.popup {
+  padding: var(--ring-unit);
+}
