@@ -83,27 +83,31 @@ export default function ProjectList({
 
   return (
     <div>
-      <Grid>
+      <Grid data-test="alignment">
         {projects.map((project) => (
           <Row key={project.id}>
-            <Col xs={12} sm={4} md={6} lg={3}>
+            <Col xs={12} sm={6} md={6} lg={6}>
               <Text size={Text.Size.L}>{project.id}</Text>
             </Col>
-            <Col xs={12} sm={4} md={6} lg={3}>
-              <Toggle
-                size={Size.Size14}
-                checked={project.finished}
-                onChange={() => handleToggle(project.id)}
-                leftLabel="Finished:"
-              />
-              {statuses[project.id] === OperationError.Toggle && (
-                <Text
-                  size={Text.Size.S}
-                  style={{ color: "var(--ring-error-color)" }}
-                >
-                  Couldn't update the project
-                </Text>
-              )}
+            <Col xs={12} sm={6} md={6} lg={6}>
+              <Row end="xs">
+                <Col xs={12}>
+                  <Toggle
+                    size={Size.Size14}
+                    checked={project.finished}
+                    onChange={() => handleToggle(project.id)}
+                    leftLabel="Finished:"
+                  />
+                  {statuses[project.id] === OperationError.Toggle && (
+                    <Text
+                      size={Text.Size.S}
+                      style={{ color: "var(--ring-error-color)" }}
+                    >
+                      Couldn't update the project
+                    </Text>
+                  )}
+                </Col>
+              </Row>
             </Col>
           </Row>
         ))}
